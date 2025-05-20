@@ -1,0 +1,31 @@
+void DisplayRoom(Room room)
+{
+    Console.WriteLine($"\nRoom {room.Name}");
+    Console.WriteLine($"Flooring {room.Flooring}\n");
+    Console.WriteLine($"Walls\n");
+    Console.WriteLine("{0,-10} {1,5} {2,6} {3,-15} {4,-10} {5,5} {6,6} {7,6}",
+                        "Plan ID", "Width", "Height", "Color", "Opening", "Width", "Height", "Edging");
+    if (room.TotalWalls > 0)
+    {
+        foreach (var wall in room.Walls)
+        {
+            if (wall.WallOpening != null)
+            {
+                Console.WriteLine("{0,-10} {1,5} {2,6} {3,-15} {4,-10} {5,5} {6,6} {7,6}",
+                    wall.PlanId, wall.Width, wall.Height,
+                    wall.Color, wall.WallOpening.Type, wall.WallOpening.Width,
+                    wall.WallOpening.Height, wall.WallOpening.Edging);
+            }
+            else
+            {
+                Console.WriteLine("{0,-10} {1,5} {2,6} {3,-15}",
+                    wall.PlanId, wall.Width, wall.Height,
+                    wall.Color);
+            }
+        }
+    }
+    else
+    {
+        Console.WriteLine($"\n Room has no recorded walls");
+    }
+}
