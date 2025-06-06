@@ -93,7 +93,7 @@ Remove method `RemoveWall(string planid)`
 | ---- | --------- | ------------------- |
 | Room Constructor | Success | Create a room with a collection of Wall instances and Floor value. Assert the collection loaded as supplied.|  
 | Room Constructor | Success | Create a room without a collection of Wall instances but with a Floor value.|  
-| Room Constructor | Success | Create a room without a collection of Wall instances and no floor value. Hint: check flooring with null, empty and blank strings.|
+| Room Constructor | Success | Create a room without a collection of Wall instances and no floor value.|
 | Room Constructor | Exception | A missing Name will throw an `ArgumentNullException` |  
 | AddWall  | Success | Add a wall to the Wall collection. |  
 | AddWall  | Exception | Missing wall instance parameter value (`ArgumentNullException`) |  
