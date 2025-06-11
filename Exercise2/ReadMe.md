@@ -23,7 +23,7 @@ For this exercise, you will add additional classes to your `RenoSystem` class li
 All validation is to be performed by throwing exceptions. Here are some general requirements.
 
 - Exceptions must have meaningful error messages with keywords (ex: positive, minimum).
-  - missing value in parameter: `ArgumentException`
+  - missing value in parameter: `ArgumentNullException`
   - incorrect value if parameter: `ArgumentException`
 - Error messages must include details about the limits for acceptable values.
 - Measurements must always be positive and non-zero numbers. Measurements are to be in whole number increments (eg: 254) (all measures are in metric centimeters).
