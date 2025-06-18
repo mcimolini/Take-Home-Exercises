@@ -109,6 +109,7 @@ In your `RenoCollection.razor` component, you are to provide the user the abilit
 - **Collect** will validate the incoming data and save to the CSV file if correct.
 - **Clear** will reset the fields to empty input state.
 - **Report** will transfer the user to the review Report page.
+- Clear and Report buttons should warn the user and get confirmation before executing.
 
 ![RenoInput Page](./RenoInput.png)
 
