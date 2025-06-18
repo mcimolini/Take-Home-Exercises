@@ -20,7 +20,7 @@ Upon completion of this exercise, you will have demonstrated the ability to:
 
 ## Project/Solution Setup
 
-You are to create a new ASP.NET Core **Blazor** Web Application project within a new solution for this exercise. Create the project for .Net Core 8 and give your project the name **RenoTrackerWebApp`**. Check with your instructor about specific settings/customizations for your Blazor project.
+You are to create a new ASP.NET Core **Blazor** Web Application project within a new solution for this exercise. Create the project for .Net Core 9 and give your project the name **RenoTrackerWebApp**. Check with your instructor about specific settings/customizations for your Blazor project.
 
 To ensure that your web application works, build and run your project. A browser window should open in a local hosted port.(Example https://localhost:5001 , your port may be different).
 
@@ -28,15 +28,12 @@ The styling for your application is up to you. The default template for the `web
 
 ### Modify `Home`
 
-Modify the home page to include the following.
+Modify the home page to include the following:
 
 - The title line for the site (**Book Reviews**)
 - A simple logo for the site
 - One to two paragraphs of welcome and summary description for the site
-
-### Update the `MainLayout`
-
-Put your name and section identifier in the `<footer>` element for the copyright information.
+- Put your name and section identifier in the `<footer>` element for the copyright information.
 
 ### Update the `NavMenu`
 
