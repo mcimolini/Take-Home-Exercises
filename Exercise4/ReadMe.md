@@ -94,12 +94,12 @@ Create a new service class called `JobServices` in your BLL folder. This class w
 In this class, create a public method called `Job_GetList()` that:
 
 - Has no parameters
-- You will need to include the assoc1ated Client instance for each job.
+- You will need to include the associated Client instance for each job.
 - Returns an ordered collection (by Description) of all records of the Job entity.
 
 **SupplyServices**
 
-Create a new service class called `SupplyServices` in your BLL folder. This class will contain two service methods:  to return the page list of supplies for a specified job ordered by Material and another to return the total number of materails for a specified job. Each method will receive a filtering parameter for a specified job. One method will also receive the data necessary to implement paging and return only the records needed for the current page that will be displayed. Remember to register your service class.
+Create a new service class called `SupplyServices` in your BLL folder. This class will contain two service methods:  to return the page list of supplies for a specified job ordered by Material and another to return the total number of materails for a specified job. Each method will receive a filtering parameter for a specified job. Remember to register your service class.
 
 Create a public method called `GetByJobId(int)` that:
 
