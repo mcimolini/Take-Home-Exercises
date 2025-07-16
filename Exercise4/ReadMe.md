@@ -101,9 +101,9 @@ In this class, create a public method called `Job_GetList()` that:
 
 Create a new service class called `SupplyServices` in your BLL folder. This class will contain two service methods:  to return the page list of supplies for a specified job ordered by Material and another to return the total number of materails for a specified job. Each method will receive a filtering parameter for a specified job. One method will also receive the data necessary to implement paging and return only the records needed for the current page that will be displayed. Remember to register your service class.
 
-Create a public method called `GetByJobId(int, int, int)` that:
+Create a public method called `GetByJobId(int)` that:
 
-- Has one parameter for the data and 2 parameters to handle paging
+- Has one parameter for the data
 - Returns a collection of Supply records, ordered alphabetically by Material, where the JobId equals the parameter value for the current page to be displayed.
 - The data parameter value will be an integer job id value.
 
@@ -159,10 +159,8 @@ The `Query` page will display summary information on the Books data in an HTML t
 - This query page will have Drop Down List filter showing the job description and start date. Use the following text display format:  Bedroom (May 23, 2025) - Contact  where Contact is the Client Contact.
 - Search button will execute an event handler to retrieve the Supply data using the search Job ID value.
 - Clear button will execute an event handler to reset the page to its opening state.
-- Demonstrate paging by limiting your display to 10 lines at a time.
+- Demonstrate table scrolling by limiting your display height to ~10 lines at a time.
 - Display a message if no supplies have been found for the selected job.
-
-*Reminder: Add the NuGet package Blazor.Bootstrap to your web application project.*
 
 ### Samples
 
@@ -192,8 +190,8 @@ Your assignment will be marked based upon the following weights.
 
 |  Weight | Deliverable/Requirement |
 |  ---- | --------- |
-|  **1** | Create appropriate ASP.NET Core Class Blazor web server application (.net core 8) |
-|  **1** | Create appropriate ASP.NET Core Class Library (.net core 8) |
+|  **1** | Create appropriate ASP.NET Core Class Blazor web server application (.net core 9) |
+|  **1** | Create appropriate ASP.NET Core Class Library (.net core 9) |
 |  **1** | Uses reverse engineering to create Entities with custom validation message and DAL classes |
 |  **2** | Setup project references, necessary NuGet packages, and service registration using extension class |
 |  **2** | `JobServices.cs` BLL service class|
